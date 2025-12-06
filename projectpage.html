@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viz 1 - Top 10 Leading Causes of Death</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .insight-box {
+      background:#fff;
+      border-left:4px solid #0d6efd;
+      padding:12px 16px;
+      margin-top:12px;
+      border-radius:6px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar with link to project info page -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand fw-bold">Visualization Page</span>
+      <a class="btn btn-outline-light btn-sm" href="projectpage.html">
+        Go to Project Page →
+      </a>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="fw-bold">Viz 1: Top 10 Leading Causes of Death</h2>
+    <p class="text-muted">
+      This bar chart shows the top 10 leading causes of death in the United States
+      for the most recent year in our dataset.
+    </p>
+
+    <!-- Plotly embed -->
+    <div>
+      <script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+      </script>
+      <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+
+      <div id="ae65454c-5a2c-47f3-bfa6-247ae37896c7"
+           class="plotly-graph-div"
+           style="height:100%; width:100%;"></div>
+
+      <script type="text/javascript">
+        window.PLOTLYENV=window.PLOTLYENV || {};
+        Plotly.newPlot(
+          "ae65454c-5a2c-47f3-bfa6-247ae37896c7",
+          [{"type":"bar",
+            "x":["Heart disease","Cancer","Unintentional injuries","CLRD","Stroke","Alzheimer's disease","Diabetes","Influenza and pneumonia","Kidney disease","Suicide"],
+            "y":[647457,599108,169936,160201,146383,121404,83564,55672,50633,47173]}],
+          {"title":{"text":"Top 10 Leading Causes of Death (U.S., 2017)"},
+           "xaxis":{"title":{"text":"Cause of Death"},"tickangle":-45},
+           "yaxis":{"title":{"text":"Number of Deaths"}}},
+          {"responsive": true}
+        );
+      </script>
+    </div>
+
+    <div class="insight-box">
+      <strong>Insight:</strong> Placeholder insight for Viz 1.
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

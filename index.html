@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Death & Overdose Trends - Project Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .nav-logo {
+      width: 110px;
+      height: 55px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .hero-img {
+      width: 100%;
+      max-height: 360px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .viz-box {
+      background:#f8f9fa;
+      border:1px dashed #bbb;
+      padding:50px;
+      text-align:center;
+      border-radius:8px;
+    }
+    .insight-box {
+      background:#fff;
+      border-left:4px solid #0d6efd;
+      padding:12px 16px;
+      margin-top:10px;
+      border-radius:6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-3" href="#">
+        <img
+          src="https://media.post.rvohealth.io/wp-content/uploads/2020/08/drug-overdose_thumb-1-732x549.jpg"
+          alt="Project logo"
+          class="nav-logo"
+        >
+        <span>Death & Overdose Project</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#questions">Questions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#data">Data</a></li>
+          <li class="nav-item"><a class="nav-link" href="#visuals">Visuals</a></li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-warning" href="index.html">Viz Page</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold">Leading Causes of Death & Drug Overdose in the U.S.</h1>
+      <p class="mt-2">Comparing major causes of death with overdose trends.</p>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="container my-4">
+    <img
+      src="https://assets3.cbsnewsstatic.com/hub/i/r/2023/10/27/d8806333-4b0a-4aed-a4bb-26cfaa452543/thumbnail/640x360/bc4f7e9d3b501aba3a8efffd2225ae90/23pkg-jk-hfr-safe-injection-transfer-transfer-frame-1397.jpg"
+      alt="Overdose prevention image"
+      class="hero-img shadow"
+    >
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="container my-5">
+    <h2>About</h2>
+    <p>
+      We use CDC datasets to see which causes of death are most common,
+      how overdose rates change over time, and who is most affected.
+    </p>
+  </div>
+
+  <!-- RESEARCH QUESTIONS -->
+  <div id="questions" class="container my-5">
+    <h2>Research Questions</h2>
+    <ol class="mt-3">
+      <li>Which leading cause of death has the highest number of deaths nationwide?</li>
+      <li>Which states have the highest and lowest age-adjusted death rates for the top causes of death?</li>
+      <li>How have drug overdose death rates changed from 1999 to recent years?</li>
+      <li>Which drug types show the highest increase in death rates?</li>
+      <li>Which demographic groups are most impacted by drug overdoses?</li>
+      <li>Are drug overdose deaths rising faster than other leading causes of death?</li>
+      <li>What patterns appear between overdose deaths and U.S. regions?</li>
+    </ol>
+  </div>
+
+  <!-- DATA SOURCES -->
+  <div id="data" class="container my-5">
+    <h2>Data Sources</h2>
+    <ul class="mt-3">
+      <li>Dataset 1 (CDC, CSV): Leading causes of death by year/state.</li>
+      <li>Dataset 2 (CDC, CSV): Overdose death rates by drug type/demographics.</li>
+      <li>Dataset 3 (CT, JSON): Connecticut overdose deaths for comparison.</li>
+    </ul>
+  </div>
+
+  <!-- VISUALIZATIONS PLACEHOLDERS -->
+  <div id="visuals" class="container my-5">
+    <h2>Visualizations (Placeholders)</h2>
+
+    <div class="my-4">
+      <h5 class="fw-semibold">
+        Viz 1: Top 10 Leading Causes of Death
+        <small class="ms-2"><a href="index.html">Open Viz Page →</a></small>
+      </h5>
+      <div class="viz-box p-0">
+  <img 
+    src="https://www-doh.nj.gov/doh-shad/contentfile/image/topic/hero/Cemetery.jpg"
+    alt="Cemetery image placeholder"
+    class="img-fluid w-100"
+    style="max-height: 360px; object-fit: cover; border-radius:8px;"
+  >
+</div>
+
+      <div class="insight-box"><strong>First Insights:</strong> Placeholder insight for Viz 1.</div>
+    </div>
+
+    <div class="my-4">
+      <h5 class="fw-semibold">Viz 2: Age-Adjusted Death Rate by State</h5>
+      <div class="viz-box">[ Choropleth Placeholder ]</div>
+      <div class="insight-box"><strong>Insight:</strong> Placeholder insight for Viz 2.</div>
+    </div>
+
+    <div class="my-4">
+      <h5 class="fw-semibold">Viz 3: Overdose Death Rates Over Time</h5>
+      <div class="viz-box">[ Line Chart Placeholder ]</div>
+      <div class="insight-box"><strong>Insight:</strong> Placeholder insight for Viz 3.</div>
+    </div>
+
+    <div class="my-4">
+      <h5 class="fw-semibold">Viz 4: Overdose by Drug Type</h5>
+      <div class="viz-box">[ Multi-Line Placeholder ]</div>
+      <div class="insight-box"><strong>Insight:</strong> Placeholder insight for Viz 4.</div>
+    </div>
+
+    <div class="my-4">
+      <h5 class="fw-semibold">Viz 5: Overdose by Race</h5>
+      <div class="viz-box">[ Grouped Bar Placeholder ]</div>
+      <div class="insight-box"><strong>Insight:</strong> Placeholder insight for Viz 5.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="bg-dark text-white text-center py-3">
+    <small>Andy & Sam • Data: CDC</small>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
